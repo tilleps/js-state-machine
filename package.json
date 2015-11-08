@@ -1,0 +1,30 @@
+{
+  "name": "js-state-machine",
+  "version": "0.1.0",
+  "description": "Javascript state machine",
+  "main": "lib/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tilleps/js-state-machine.git"
+  },
+  "keywords": [
+    "javascript",
+    "state",
+    "machine"
+  ],
+  "author": "Eugene Song <tilleps@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tilleps/js-state-machine/issues"
+  },
+  "homepage": "https://github.com/tilleps/js-state-machine#readme",
+  "devDependencies": {
+    "webpack": "^1.12.3"
+  }
+}
