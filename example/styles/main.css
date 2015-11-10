@@ -1,0 +1,64 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+
+
+.signal { border: 1px solid #000; width: 20px; height: 60px; background: #333; }
+.signal > div { width: 20px; height: 20px; border-radius: 10px; cursor: pointer; background: #777; }
+.signal .red.on { background: #f00; }
+.signal .red.blinking { animation: blink-red steps(1) 1s infinite; }
+.signal .yellow.on { background: #ee0; }
+.signal .yellow.blinking { animation: blink-yellow steps(1) 1s infinite; }
+.signal .green.on { background: #0f0; }
+.signal .green.blinking { animation: blink-green steps(1) 1s infinite; }
+
+@keyframes blink-red {  
+  0% { background: #777; }
+  50% { background: #f00; }
+  100% { background: #777; }
+}
+
+@keyframes blink-yellow {  
+  0% { background: #777; }
+  50% { background: #ee0; }
+  100% { background: #777; }
+}
+
+@keyframes blink-green {  
+  0% { background: #777; }
+  50% { background: #0f0; }
+  100% { background: #777; }
+}
+
+@keyframes blink-dontwalk {  
+  0% { color: #777; }
+  50% { color: #f00; }
+  100% { color: #777; }
+}
+
+@keyframes blink-walk {  
+  0% { color: #777; }
+  50% { color: #fff; }
+  100% { color: #777; }
+}
+
+
+.crosswalk { width: 30px; margin: 10px 0 0 0; padding: 4px; text-align: center; background: #333; font-size: 10px; font-family: arial; }
+.crosswalk .dont { color: #777; cursor: pointer; }
+.crosswalk .dont.on { color: #f00; }
+.crosswalk .dont.blinking { animation: blink-dontwalk steps(1) 1s infinite; }
+.crosswalk .walk { color: #777; cursor: pointer; }
+.crosswalk .walk.on { color: #fff; }
+.crosswalk .walk.blinking { animation: blink-walk steps(1) 1s infinite; }
+
+
+.states { display: flex; }
+.states a { border: 1px solid #aaa; border-radius: 4px; margin: 5px; display: inline; padding: 10px; font-size: 15px; font-family: arial; text-align: center; }
+.states .active { background: #0f0; }
